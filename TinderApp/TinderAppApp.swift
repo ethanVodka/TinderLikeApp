@@ -11,7 +11,9 @@ import SwiftUI
 struct TinderAppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SignInView()
+                .environmentObject(CardViewModel())
+            //HomeView()
         }
     }
 }

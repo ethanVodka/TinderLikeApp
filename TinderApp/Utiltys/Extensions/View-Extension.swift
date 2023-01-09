@@ -12,4 +12,8 @@ extension View{
     func asRoundShadow(size: CGFloat) -> some View{
         modifier(BottomButtonModifire(size: size))
     }
+    
+    func asSignInTextField() -> some View{
+        modifier(SignInTextFieldModifier())
+    }
 }

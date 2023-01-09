@@ -16,6 +16,11 @@
 		4A75BCFA2966B62300C82927 /* BottomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75BCF92966B62300C82927 /* BottomButtonModifier.swift */; };
 		4A75BCFC2966B64F00C82927 /* View-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75BCFB2966B64F00C82927 /* View-Extension.swift */; };
 		4A75BCFE2966B67F00C82927 /* Image-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75BCFD2966B67F00C82927 /* Image-Extension.swift */; };
+		4A75BD0129680B2A00C82927 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75BD0029680B2A00C82927 /* CardViewModel.swift */; };
+		4AC1006E296A242F005B15AF /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC1006D296A242F005B15AF /* UserInformation.swift */; };
+		4AC10070296A627C005B15AF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC1006F296A627C005B15AF /* SignInView.swift */; };
+		4AC10072296A6463005B15AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC10071296A6463005B15AF /* LoginView.swift */; };
+		4AC10074296A6759005B15AF /* SignInTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC10073296A6759005B15AF /* SignInTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		4A75BCF92966B62300C82927 /* BottomButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonModifier.swift; sourceTree = "<group>"; };
 		4A75BCFB2966B64F00C82927 /* View-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-Extension.swift"; sourceTree = "<group>"; };
 		4A75BCFD2966B67F00C82927 /* Image-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image-Extension.swift"; sourceTree = "<group>"; };
+		4A75BD0029680B2A00C82927 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		4AC1006D296A242F005B15AF /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		4AC1006F296A627C005B15AF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		4AC10071296A6463005B15AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4AC10073296A6759005B15AF /* SignInTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +71,11 @@
 		4A75BCE2296649DC00C82927 /* TinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				4A75BCFF29680AE600C82927 /* ViewModel */,
 				4A75BCF62966B5CA00C82927 /* Utiltys */,
 				4A75BCF12966AB9C00C82927 /* Views */,
 				4A75BCE3296649DC00C82927 /* TinderAppApp.swift */,
+				4AC1006D296A242F005B15AF /* UserInformation.swift */,
 				4A75BCE7296649E100C82927 /* Assets.xcassets */,
 				4A75BCE9296649E100C82927 /* Preview Content */,
 			);
@@ -84,6 +96,8 @@
 				4A75BCE5296649DC00C82927 /* HomeView.swift */,
 				4A75BCF22966ABD800C82927 /* TopControlView.swift */,
 				4A75BCF42966ADD500C82927 /* BottomControlView.swift */,
+				4AC1006F296A627C005B15AF /* SignInView.swift */,
+				4AC10071296A6463005B15AF /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,8 +124,17 @@
 			isa = PBXGroup;
 			children = (
 				4A75BCF92966B62300C82927 /* BottomButtonModifier.swift */,
+				4AC10073296A6759005B15AF /* SignInTextFieldModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4A75BCFF29680AE600C82927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A75BD0029680B2A00C82927 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +211,12 @@
 				4A75BCE6296649DC00C82927 /* HomeView.swift in Sources */,
 				4A75BCFC2966B64F00C82927 /* View-Extension.swift in Sources */,
 				4A75BCE4296649DC00C82927 /* TinderAppApp.swift in Sources */,
+				4AC10070296A627C005B15AF /* SignInView.swift in Sources */,
+				4AC1006E296A242F005B15AF /* UserInformation.swift in Sources */,
+				4A75BD0129680B2A00C82927 /* CardViewModel.swift in Sources */,
 				4A75BCF52966ADD500C82927 /* BottomControlView.swift in Sources */,
+				4AC10074296A6759005B15AF /* SignInTextFieldModifier.swift in Sources */,
+				4AC10072296A6463005B15AF /* LoginView.swift in Sources */,
 				4A75BCFE2966B67F00C82927 /* Image-Extension.swift in Sources */,
 				4A75BCFA2966B62300C82927 /* BottomButtonModifier.swift in Sources */,
 			);
@@ -327,6 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
