@@ -1,5 +1,4 @@
 # TinderLikeApp
-Tinder風アプリ作成
 
+Tinder風アプリホーム画面
 
-まだ未完成
